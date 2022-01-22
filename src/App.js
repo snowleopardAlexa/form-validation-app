@@ -4,14 +4,16 @@ import FormInput from './components/FormInput';
 
 function App() {
 
- // const [username, setUsername] = useState("")
+const [username, setUsername] = useState("")
+const [username, setUsername] = useState("")
+const [username, setUsername] = useState("")
+const [username, setUsername] = useState("")
 
 
 // use useRef instead of useState
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = new FormData(e.target) 
-    console.log(Object.fromEntries(data.entries()))
+    
 
   };
 
