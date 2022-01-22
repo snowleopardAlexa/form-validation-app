@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 import './App.css';
 import FormInput from './components/FormInput';
 
@@ -11,7 +11,7 @@ const [values, setValues] = useState({
   lastName: "",
   birthday: "",
   password: "",
-  confirmPassowrd: "",
+  confirmPassword: "",
 });
 
 const inputs = [
@@ -53,14 +53,14 @@ const inputs = [
   {
     id: 6,
     name: "password",
-    type: "text",
+    type: "password",
     placeholder: "Password",
     label: "Password"
   },
   {
     id: 7,
     name: "confirmPassword",
-    type: "text",
+    type: "password",
     placeholder: "Confirm Password",
     label: "Confirm Password"
   }
