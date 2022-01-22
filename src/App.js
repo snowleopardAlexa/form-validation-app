@@ -60,7 +60,6 @@ const inputs = [
     type: "date",
     placeholder: "Birthday",
     label: "Birthday",
-    required: true,
   },
   {
     id: 6,
