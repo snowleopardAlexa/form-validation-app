@@ -1,11 +1,13 @@
 import './formInput.css';
 
 const FormInput = (props) => {
+
+  const {label, onChange, id, ...inputProps } = props;
+    
   return (
     <div className="formInput">
-        <input 
-          name={props.name}
-          placeholder={props.placeholder} />
+        <label>{label}</label>
+        <input {...inputProps} onChange={onChange} />
     </div>
   )
 };

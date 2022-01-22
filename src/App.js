@@ -4,7 +4,7 @@ import FormInput from './components/FormInput';
 
 function App() {
 
-const [value, seValue] = useState({
+const [values, setValues] = useState({
   username: "",
   email: "",
   firstName: "",
@@ -71,11 +71,21 @@ const inputs = [
     e.preventDefault();
   };
 
+  const onChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value});
+  }
+
   return (
     <div className="app">
        <form onSubmit={handleSubmit}>
-         <FormInput name="username" placeholder="Username" />
-         
+         {inputs.map((input) => (
+            <FormInput 
+              key={input.id} 
+              {...input} 
+              value={values[input.name]} 
+              onChange={onChange}
+            />
+         ))}       
          <button>Submit</button>
        </form>
     </div>
