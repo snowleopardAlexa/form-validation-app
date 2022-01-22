@@ -3,7 +3,7 @@ import './formInput.css';
 const FormInput = (props) => {
   return (
     <div className="formInput">
-        <input placeholder={props.placeholder} onChange={e => props.setUsername(e.target.value)} />
+        <input ref={props.refer} placeholder={props.placeholder} />
     </div>
   )
 };
