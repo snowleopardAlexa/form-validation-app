@@ -21,7 +21,8 @@ const inputs = [
     type: "text",
     placeholder: "Username",
     errorMessage: "Username should be 5-16 characters and shouldn't include any special character!",
-    label: "Username"
+    label: "Username",
+    required: true,
   },
   {
     id: 2,
@@ -29,7 +30,8 @@ const inputs = [
     type: "text",
     placeholder: "Email",
     errorMessage: "It should be a valid email address",
-    label: "Email"
+    label: "Email",
+    required: true,
   },
   {
     id: 3,
@@ -37,7 +39,8 @@ const inputs = [
     type: "text",
     placeholder: "First Name",
     errorMessage: "It should contain letters",
-    label: "First Name"
+    label: "First Name",
+    required: true,
   },
   {
     id: 4,
@@ -45,14 +48,16 @@ const inputs = [
     type: "text",
     placeholder: "Last Name",
     errorMessage: "It should contain letters",
-    label: "Last Name"
+    label: "Last Name",
+    required: true,
   },
   {
     id: 5,
     name: "birthday",
     type: "text",
     placeholder: "Birthday",
-    label: "Birthday"
+    label: "Birthday",
+    required: true,
   },
   {
     id: 6,
@@ -60,7 +65,8 @@ const inputs = [
     type: "password",
     placeholder: "Password",
     errorMessage: "Password should be 6-20 characters and include at least 1 letter, 1 number, and 1 special character.",
-    label: "Password"
+    label: "Password",
+    required: true,
   },
   {
     id: 7,
@@ -68,7 +74,8 @@ const inputs = [
     type: "password",
     placeholder: "Confirm Password",
     errorMessage: "Password don't match.",
-    label: "Confirm Password"
+    label: "Confirm Password",
+    required: true,
   }
 ]
 
