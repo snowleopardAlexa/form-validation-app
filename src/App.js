@@ -94,7 +94,7 @@ const inputs = [
 
   return (
     <div className="app">
-       <form onSubmit={handleSubmit}>
+       <form className="form" onSubmit={handleSubmit}>
          <h1>Register</h1>
          {inputs.map((input) => (
             <FormInput 
