@@ -94,6 +94,7 @@ const inputs = [
 
   return (
     <div className="app">
+      <div className="form-container">
        <form className="form" onSubmit={handleSubmit}>
          <h1>Register</h1>
          {inputs.map((input) => (
@@ -106,6 +107,7 @@ const inputs = [
          ))}       
          <button>Submit</button>
        </form>
+      </div>
     </div>
   );
 }
